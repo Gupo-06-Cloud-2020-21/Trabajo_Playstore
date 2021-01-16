@@ -1,0 +1,7 @@
+#!/bin/bash
+
+python3 prepro.py
+echo "Procesado con python finalizado, procediendo a procesado con R..."
+Rscript Script.R
+sed -i 's/"//g' Salida.csv
+echo "Parte en R finalizada, GoogleSalida.csv ha sido limpiado y actualizado"

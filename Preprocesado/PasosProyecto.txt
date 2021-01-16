@@ -1,0 +1,13 @@
+Pasos para realizar el proyecto:
+
+1. Descargar el fichero Google-Playstore.csv
+2. Realizar el preprocesado del fichero con prepro.py, para ello:
+	- Instalar pandas: sudo apt-get install python3 pandas
+	- Preprocesado: python3 prepro.py 
+3. Despues del paso anterior obtendremos un csv llamado Salida_clean.csv
+4. Necesitamos el programa R para continuar con el preprocesado
+5. Instalar R si no esta instalado ya (última versión disponible)
+6. Importar Salida_clean.csv a R
+7. Incluir el codigo del script de preprocesado en R y ejecutar el código sobre Salida_clean.csv
+8. Obtendremos un csv llamado Salida.csv sobre el cual trabajaremos a partir de ahora
+9. Ejecutamos los diferentes scrpits que tenemos en pyspark para obtener datos y estudiar el csv
