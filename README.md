@@ -15,11 +15,11 @@ $ python prepro.py GooglePlaystore.csv
 
 Una vez hicimos este preprocesado, tuvimos que realizar otra fase de limpieza ya que había datos que no estaban en el formato que deseábamos. Para ello utilizamos el lenguaje “R” que nos permitía modificar estas erratas de forma sencilla. Script.R completamos esta primera fase de limpieza del Dataset, y empezamos a trabajar en el estudio.
 $ Rscript script.R
-# Luego hay que quitar todas las comillas dobles del fichero
-# que ha generado R
+#Luego hay que quitar todas las comillas dobles del fichero
+#que ha generado R
 $ sed -i 's/"//g' Salida.csv
 Pero para hacerlo todo más facil hemos creado dos scripts, uno instala todos los paquetes necesarios para correr prepro.py y script.R, y el otro, coge el archivo original Google-Playstore.csv y devuelve otro csv ya con todo el preprocesado realizado, que se llama Salida.csv.
-# Primero tenemos que dar permisos de ejecución al los scripts
+#Primero tenemos que dar permisos de ejecución al los scripts
 $ chmod +x instalar_R.script && chmod +x limpieza_salida.script
 $ sudo ./instalar_R.script
 $ ./limpieza_salida.script
@@ -31,40 +31,25 @@ Si queremos ejecutar este programa en modo local, ya sea en vuestro sistema oper
 Instalación Spark en nuestra máquina Ubuntu
 Aunque pensemos que podemos tener todo instalado, si no estamos correctamente seguros, realizaremos los siguientes pasos:
 Primero, instalaremos Java, ya que es necesario para arrancar Apache Spark
-1
-2
 $ sudo apt-get update
 $ sudo apt install default-jdk
 Después, será necesarior instalar Scala y comprobar la correcta instalación y version.
-1
-2
-3
 $ sudo apt-get install scala
 $ scala -version
 Scala code runner version 2.11.12 -- Copyright 2002-2017, LAMP/EPF
 Tras esto, instalaremos Python
-1
+
 $ sudo apt-get install python
 Para comprobar la instalación, ejecutamos:
-1
 $ python -h
 Por último, instalamos Spark
-1
-2
-3
-4
 $ sudo curl -o http://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz
 $ sudo tar xvf ./spark-2.2.0-bin-hadoop2.7.tgz
 $ sudo mkdir /usr/local/spark
 $ sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark
 Puede ser que nuestra máquina no reconozca el comando curl, en este caso, procederemos a instalarlo y a continuación, volveremos a realizar el paso anterior
-1
 $ sudo apt install curl
 También tendrás que instalar los paquete Pandas, Numpy y unicodecsv, que puedes conseguir mediante estos comandos
-1
-2
-3
-4
 $ sudo apt-get install python-pip
 $ sudo pip install numpy
 $ sudo pip install pandas
@@ -72,28 +57,19 @@ $ sudo pip install unicodecsv
 
 Amazon Web Services
 Para ejecutar la aplicación mediante un clúster, será necesario iniciar un clúster con Spark en Hadoop a través de Amazon AWS. Después de iniciar el clúster, instalaremos Pandas, Numpy y unicodecsv igual que para la ejecución en modo local, esta vez sin sudo:
-1
-2
-3
-4
 $ sudo apt-get install python-pip
 $ pip install numpy
 $ pip install pandas
 $ pip install unicodecsv
 En caso de aparecer un error con el comando pip, tendremos que actualizarlo:
-1
 $ pip install --upgrade pip
 Al estar ejecutando la aplicación en un clúster, los comandos cambian, para ejecutar cualquier opcion, lo haremos de la siguiente forma (donde N y M son los número que queramos poner):
-1
 $ spark-submit --num-executors N --executor-cores M "script"
 Una vez ejecutado el script, necesitamos obtener la carpeta de salida del hadoop file system, para ello:
-1
 $ hadoop fs -get "nombreDirectorioSalida"
 Si queremos volver a ejecutar el mismo código con otras opciones habría que borrar los ficheros de salida generados en la ejecución anterior, para ello, utilizamos los siguientes comandos:
-1
 $ hadoop fs -rm -r "nombreDirectorioSalida"
 Para consultar los directorios:
-1
 $ hadoop fs -ls
 
 
@@ -120,8 +96,6 @@ Ejecución
 Cabe destacar que algunos de nuestros scripts generan tanto una tabla como un gráfico, aunque se pueden ejecutar tanto en Windows como en Linux, es necesario utilizar Windows para poder ver las gráficas.
 Lo primero que tenemos que hacer es abrir una terminal y desplazarnos hasta el directorio en el que se encuentran nuestros scripts, para que funcionen correctamente es necesario que además el fichero .csv se enucentre en el mismo directorio.
 Tras esto arrancaríamos spark ejecutando
-1
 $ pyspark
 Para ejecutar nuestros scripts simplemente utilizariamos el comando:
-1
 $ spark-submit nombre_script.py
