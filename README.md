@@ -1,4 +1,4 @@
-# Trabajo_Playstore
+# Trabajo Playstore
 Este trabajo ha sido realizado por:
 
 -Álvaro Casado Molinero
@@ -48,7 +48,7 @@ $ ./limpieza_salida.script
 
 Tenemos 2 formas de ejecutar las opciones del programa, en modo local, y a través de una instancia de Amazon Web Services. A continuación, se explica como utilizar cada una de ellas.
 
-Modo local
+# Modo local
 
 Si queremos ejecutar este programa en modo local, ya sea en vuestro sistema operativo Linux Ubuntu o en Windows pero a través de una máquina virtual de Ubuntu (con VirtualBox, por ejemplo), es necesario tener instalado en nuestro equipo Spark en modo local, si no lo tienes o no sabes como hacerlo, aquí tienes un tutorial para conseguirlo.
 
@@ -94,7 +94,7 @@ $ sudo pip install numpy
 $ sudo pip install pandas
 $ sudo pip install unicodecsv
 
-Amazon Web Services
+# Amazon Web Services
 
 Para ejecutar la aplicación mediante un clúster, será necesario iniciar un clúster con Spark en Hadoop a través de Amazon AWS. Después de iniciar el clúster, instalaremos 
 Pandas, Numpy y unicodecsv igual que para la ejecución en modo local, esta vez sin sudo:
@@ -128,7 +128,7 @@ $ hadoop fs -ls
 
 Para poder obtener las gráficas y estudiar nuestros resultados de una forma mas visual necesitamos utilizar pyspark en Windows mediante la herramienta de Anaconda, ya que linux no tiene una herramienta para mostrar las gráficas que generamos en los scripts.
 
-Uso en Windows
+# Uso en Windows
 
 Lo primero que tenemos que hacer es descargar el programa de Anaconda para Windows. Para ello, simplemente descargar la ultima versión disponible en su pagina web https://www.anaconda.com/products/individual.
 
@@ -154,7 +154,7 @@ Una vez dentro de la “interfaz” de pyspark que nos aparece en la consola sim
 
 Una vez tengas todo instalado en el sistema, te mostramos como ejecutar nuestros scripts
 
-Ejecución
+# Ejecución
 
 Cabe destacar que algunos de nuestros scripts generan tanto una tabla como un gráfico, aunque se pueden ejecutar tanto en Windows como en Linux, es necesario utilizar Windows para poder ver las gráficas.
 
