@@ -32,9 +32,7 @@ Una vez hicimos este preprocesado, tuvimos que realizar otra fase de limpieza ya
 Script.R completamos esta primera fase de limpieza del Dataset, y empezamos a trabajar en el estudio.
 **$ Rscript script.R**
 
-#Luego hay que quitar todas las comillas dobles del fichero
-
-#que ha generado R
+#Luego hay que quitar todas las comillas dobles del fichero que ha generado R
 
 **$ sed -i 's/"//g' Salida.csv**
 
