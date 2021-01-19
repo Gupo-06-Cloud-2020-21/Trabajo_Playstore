@@ -62,7 +62,7 @@ $ sudo apt install default-jdk**
 
 Después, será necesario instalar Scala y comprobar la correcta instalación y version.
 
-**$ sudo apt-get install scala
+**$ sudo apt-get install scala**
 
 Tras esto, instalaremos Python
 
