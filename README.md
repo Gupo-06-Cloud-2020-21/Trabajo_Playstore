@@ -1,13 +1,13 @@
 # Trabajo Playstore
 Este trabajo ha sido realizado por:
 
--**Álvaro Casado Molinero
+-**Álvaro Casado Molinero**
 
--**Sergio Morán Agüero
+-**Sergio Morán Agüero**
 
--**Jesús Sánchez Granado
+-**Jesús Sánchez Granado**
 
--**Daniel Sanz Mayo
+-**Daniel Sanz Mayo**
 
 Se pretende hacer un estudio a gran escala de las aplicaciones en la playstore para ver cuales son las más exitosas, las que han sido descargadas más veces,tienen mejores 
 valoraciones… 
