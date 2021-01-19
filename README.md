@@ -1,19 +1,20 @@
 # Trabajo Playstore
 Este trabajo ha sido realizado por:
 
--Álvaro Casado Molinero
+-**Álvaro Casado Molinero
 
--Sergio Morán Agüero
+-**Sergio Morán Agüero
 
--Jesús Sánchez Granado
+-**Jesús Sánchez Granado
 
--Daniel Sanz Mayo
+-**Daniel Sanz Mayo
 
 Se pretende hacer un estudio a gran escala de las aplicaciones en la playstore para ver cuales son las más exitosas, las que han sido descargadas más veces,tienen mejores 
 valoraciones… 
 
 Con el objetivo de encontrar los patrones que siguen estas aplicaciones para tener tanto éxito.
 
+# Limpieza del dataset
 Una vez tenemos el Dataset con toda la información empezamos a analizarlo.
 
 Originalmente el Dataset contenía algunas erratas que tuvimos que eliminar. Para ello, realizamos un preprocesado del Dataset para quitar los datos que no necesitábamos, modificar valores nulos...
