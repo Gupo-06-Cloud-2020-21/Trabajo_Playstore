@@ -1,15 +1,24 @@
 # Trabajo_Playstore
 Este trabajo ha sido realizado por:
 Álvaro Casado Molinero
+
 Sergio Morán Agüero
+
 Jesús Sánchez Granado
+
 Daniel Sanz Mayo
-Se pretende hacer un estudio a gran escala de las aplicaciones en la playstore para ver cuales son las más exitosas, las que han sido descargadas más veces,tienen mejores valoraciones… 
+
+Se pretende hacer un estudio a gran escala de las aplicaciones en la playstore para ver cuales son las más exitosas, las que han sido descargadas más veces,tienen mejores 
+valoraciones… 
+
 Con el objetivo de encontrar los patrones que siguen estas aplicaciones para tener tanto éxito.
+
 Una vez tenemos el Dataset con toda la información empezamos a analizarlo.
+
 Originalmente el Dataset contenía algunas erratas que tuvimos que eliminar. Para ello, realizamos un preprocesado del Dataset para quitar los datos que no necesitábamos, modificar valores nulos...
 
-En primer lugar, nos ocupamos de eliminar las columnas que no necesitábamos porque no aportaban información útil para el estudio (por ejemplo, la web del desarrollador). Además, debido a que algunas columnas contenían un pequeño porcentaje de valores nulos, tuvimos que modificarlas (por ejemplo, la valoración de la app). Para que estos valores no afectasen a los resultados del estudio, no los tendremos en cuenta a la hora de realizar las consultas.
+En primer lugar, nos ocupamos de eliminar las columnas que no necesitábamos porque no aportaban información útil para el estudio (por ejemplo, la web del desarrollador). 
+Además, debido a que algunas columnas contenían un pequeño porcentaje de valores nulos, tuvimos que modificarlas (por ejemplo, la valoración de la app). Para que estos valores no afectasen a los resultados del estudio, no los tendremos en cuenta a la hora de realizar las consultas.
 Para ello generamos el script prepro.py el cual, selecciona las columnas que queremos del Dataset, e introduce un valor de 0 en aquellas columnas que no tienen ningún valor. Para ejecutarlo:
 $ python prepro.py GooglePlaystore.csv
 
