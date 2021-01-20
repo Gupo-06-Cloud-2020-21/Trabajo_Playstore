@@ -40,9 +40,11 @@ Pero para hacerlo todo más facil hemos creado dos scripts, uno instala todos lo
 
 #Primero tenemos que dar permisos de ejecución al los scripts
 
-**$ chmod +x instalar_R.script && chmod +x limpieza_salida.script
-$ sudo ./instalar_R.script
-$ ./limpieza_salida.script**
+**$ chmod +x instalar_R.script && chmod +x limpieza_salida.script**
+
+**$ sudo ./instalar_R.script**
+
+**$ ./limpieza_salida.script**
 
 
 Tenemos 2 formas de ejecutar las opciones del programa, en modo local, y a través de una instancia de Amazon Web Services. A continuación, se explica como utilizar cada una de ellas.
