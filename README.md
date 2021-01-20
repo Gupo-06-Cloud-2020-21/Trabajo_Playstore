@@ -59,8 +59,8 @@ Aunque pensemos que podemos tener todo instalado, si no estamos correctamente se
 
 Primero, instalaremos Java, ya que es necesario para arrancar Apache Spark
 
-**$ sudo apt-get update
-$ sudo apt install default-jdk**
+**$ sudo apt-get update**
+**$ sudo apt install default-jdk**
 
 Después, será necesario instalar Scala y comprobar la correcta instalación y version.
 
@@ -77,9 +77,9 @@ Para comprobar la instalación, ejecutamos:
 Por último, instalamos Spark
 
 **$ sudo curl -o http://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz**
-$ **sudo tar xvf ./spark-2.2.0-bin-hadoop2.7.tgz**
-$ **sudo mkdir /usr/local/spark**
-$ **sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark**
+**$ sudo tar xvf ./spark-2.2.0-bin-hadoop2.7.tgz**
+**$ sudo mkdir /usr/local/spark**
+**$ sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark*
 
 Puede ser que nuestra máquina no reconozca el comando curl, en este caso, procederemos a instalarlo y a continuación, volveremos a realizar el paso anterior
 
