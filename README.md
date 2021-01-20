@@ -87,20 +87,20 @@ Puede ser que nuestra máquina no reconozca el comando curl, en este caso, proce
 
 También tendrás que instalar los paquete Pandas, Numpy y unicodecsv, que puedes conseguir mediante estos comandos
 
-**$ sudo apt-get install python-pip
-$ sudo pip install numpy
-$ sudo pip install pandas
-$ sudo pip install unicodecsv**
+**$ sudo apt-get install python-pip**
+**$ sudo pip install numpy**
+**$ sudo pip install pandas**
+**$ sudo pip install unicodecsv**
 
 # Amazon Web Services
 
 Para ejecutar la aplicación mediante un clúster, será necesario iniciar un clúster con Spark en Hadoop a través de Amazon AWS. Después de iniciar el clúster, instalaremos 
 Pandas, Numpy y unicodecsv igual que para la ejecución en modo local, esta vez sin sudo:
 
-**$ sudo apt-get install python-pip
-$ pip install numpy
-$ pip install pandas
-$ pip install unicodecsv**
+**$ sudo apt-get install python-pip**
+**$ pip install numpy**
+**$ pip install pandas**
+**$ pip install unicodecsv**
 
 En caso de aparecer un error con el comando pip, tendremos que actualizarlo:
 
