@@ -83,7 +83,7 @@ Por último, instalamos Spark
 
 **$ sudo mkdir /usr/local/spark**
 
-**$ sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark**
+**$ sudo cp -r spark-2.2.0-bin-hadoop2.7/*** **/usr/local/spark**
 
 
 Puede ser que nuestra máquina no reconozca el comando curl, en este caso, procederemos a instalarlo y a continuación, volveremos a realizar el paso anterior
