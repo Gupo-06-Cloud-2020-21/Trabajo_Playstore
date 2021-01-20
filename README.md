@@ -60,6 +60,7 @@ Aunque pensemos que podemos tener todo instalado, si no estamos correctamente se
 Primero, instalaremos Java, ya que es necesario para arrancar Apache Spark
 
 **$ sudo apt-get update**
+
 **$ sudo apt install default-jdk**
 
 Después, será necesario instalar Scala y comprobar la correcta instalación y version.
@@ -77,9 +78,13 @@ Para comprobar la instalación, ejecutamos:
 Por último, instalamos Spark
 
 **$ sudo curl -o http://d3kbcqa49mib13.cloudfront.net/spark-2.2.0-bin-hadoop2.7.tgz**
+
 **$ sudo tar xvf ./spark-2.2.0-bin-hadoop2.7.tgz**
+
 **$ sudo mkdir /usr/local/spark**
-**$ sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark*
+
+**$ sudo cp -r spark-2.2.0-bin-hadoop2.7/* /usr/local/spark**
+
 
 Puede ser que nuestra máquina no reconozca el comando curl, en este caso, procederemos a instalarlo y a continuación, volveremos a realizar el paso anterior
 
@@ -88,8 +93,11 @@ Puede ser que nuestra máquina no reconozca el comando curl, en este caso, proce
 También tendrás que instalar los paquete Pandas, Numpy y unicodecsv, que puedes conseguir mediante estos comandos
 
 **$ sudo apt-get install python-pip**
+
 **$ sudo pip install numpy**
+
 **$ sudo pip install pandas**
+
 **$ sudo pip install unicodecsv**
 
 # Amazon Web Services
@@ -98,8 +106,11 @@ Para ejecutar la aplicación mediante un clúster, será necesario iniciar un cl
 Pandas, Numpy y unicodecsv igual que para la ejecución en modo local, esta vez sin sudo:
 
 **$ sudo apt-get install python-pip**
+
 **$ pip install numpy**
+
 **$ pip install pandas**
+
 **$ pip install unicodecsv**
 
 En caso de aparecer un error con el comando pip, tendremos que actualizarlo:
